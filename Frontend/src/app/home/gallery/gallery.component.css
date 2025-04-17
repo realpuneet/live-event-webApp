@@ -1,0 +1,162 @@
+body {
+    background-color: white;
+}
+
+section {
+    padding: 2rem 9%;
+}
+
+.whole {
+    display: flex;
+    justify-content: center;
+}
+
+.btn {
+    text-decoration: none;
+    margin-top: 1rem;
+    display: inline-block;
+    padding: 18px;
+    font-size: 1.7rem;
+    border-radius: .5rem;
+    background: #ff7043;
+    color: #333;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: rgb(255, 203, 107);
+}
+
+.home .content {
+    text-align: center;
+    padding-top: 6rem;
+    margin: 2rem auto;
+    max-width: 70rem;
+}
+
+.home .content h3 {
+    color: black;
+    font-size: 4.5rem;
+    text-transform: uppercase;
+}
+
+.home .content h3 span {
+    color: var(--main-color);
+    font-size: 4.5rem;
+    text-transform: uppercase;
+}
+
+.head {
+    text-align: center;
+    padding-bottom: 2rem;
+    color: black;
+    text-transform: uppercase;
+    font-size: 3rem;
+}
+
+.head span {
+    color: #ff7043;
+    ;
+    text-transform: uppercase;
+    font-size: 3rem;
+}
+
+
+.row {
+    display: flex;
+
+}
+
+.col-sm-5 {
+    margin: 19px 19px;
+}
+
+.event_text {
+
+    box-shadow: 10px 10px 10px -10px rgba(0, 0, 0, 34),
+        inset 10px 10px 10px -10px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    width: 400px;
+
+    padding: 10px;
+    cursor: pointer;
+    background: #fff;
+
+}
+
+.events .box {
+    width: -50%;
+    margin: 10px 15px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
+    gap: 1.5rem;
+}
+
+.events .box .card .image img {
+    width: 350px;
+
+}
+
+.card .image {
+    margin: 10px;
+    transition: 0.6s;
+}
+
+.card .image:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.heading {
+    text-align: center;
+    padding-bottom: 2rem;
+    color: black;
+    text-transform: uppercase;
+    font-size: 3rem;
+}
+
+.heading span {
+    color: #ff7043;
+    text-transform: uppercase;
+    font-size: 3rem;
+}
+
+.service .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
+    gap: 1.5rem;
+
+}
+
+.service .box-container .box {
+
+    border-radius: .2rem;
+    box-shadow: 10px 10px 10px -10px rgba(0, 0, 0, 34),
+        inset 10px 10px 10px -10px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    padding: 2.5rem;
+}
+
+.service .box-container .box i {
+    height: 5rem;
+    width: 5rem;
+    line-height: 5rem;
+    border-radius: 50%;
+    font-size: 2.5rem;
+    background-color: rgb(251, 201, 108);
+    ;
+}
+
+.service .box-container .box h3 {
+    font-size: 2rem;
+    color: black;
+    padding: 1rem 0;
+
+}
+
+.service .box-container .box p {
+    font-size: 1.3rem;
+    color: black;
+    line-height: 1.8;
+
+}

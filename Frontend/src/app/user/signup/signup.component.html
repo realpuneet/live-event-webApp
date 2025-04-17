@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+</head>
+
+<body>
+    <div class="fullContent">
+        <div class="container">
+            <div class="heading">
+                <h3>SIGN UP</h3>
+            </div>
+            <!-- <div class="sub-heading">
+                <P>Please register here</P>
+            </div> -->
+
+
+            <form class="form" #signupform="ngForm" (ngSubmit)="singupuser(signupform.value)">
+                <div class="name">
+                    <div class="name">
+                        <input type="text" name="fullName" class="box" placeholder="Enter your full name"
+                            #name="ngModel" [(ngModel)]="userData.fullName" required>
+                        <span class="validation" *ngIf="name.invalid && name.touched">invalid input</span>
+                    </div>
+
+                    <div class="name">
+                        <input type="text" name="email" class="box" #email="ngModel" placeholder="Enter email"
+                            [(ngModel)]="userData.email" required email>
+                        <span class="validation" *ngIf="email.invalid && email.touched">invalid email</span>
+                    </div>
+
+                    <div class=" name">
+                        <input type="number" name="phone" class="box" #number="ngModel" placeholder=" Enter your Number"
+                            [(ngModel)]="userData.phone">
+                        <span class="validation" *ngIf="number.invalid && number.touched">invalid input</span>
+                    </div>
+
+                    <div class="name">
+                        <input type="password" name="password" class="box" placeholder="Enter password"
+                            #password="ngModel" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                            title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"
+                            [(ngModel)]="userData.password" required>
+                        <span class="validation" *ngIf="password.invalid && password.touched">Not acceptable weak
+                            password
+                        </span>
+                    </div>
+
+                    <div class="name">
+                        <input type="password" name="confirmPassword" class="box" placeholder="Confirm password"
+                            [(ngModel)]="userData.confirmPassword" #confirmPassword="ngModel" required>
+                        <span class=" validation"
+                            *ngIf="password.value !== confirmPassword.value && confirmPassword.dirty">Password do not
+                            match.</span>
+                    </div>
+                </div>
+
+                <!-- <div class="condition1">
+                    <input type="checkbox" name="" id="" class="checkbox">
+                    <span for="" class="conditon">I agree for all terms and conditions</span>
+                </div> -->
+                <div class="btn-p">
+                    <input type="submit" name="" class="btn" value="Sign Up" ngModel>
+                </div>
+                <div class="last">
+                    <p>I have an account <u (click)="gotoLogin()" class="move">Sign in</u></p>
+                </div>
+            </form>
+
+        </div>
+    </div>
+
+</body>
+
+</html>

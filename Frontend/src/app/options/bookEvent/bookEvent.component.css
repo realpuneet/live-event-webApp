@@ -1,0 +1,72 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    color: white;
+
+}
+
+.whole {
+    background-image: url('../Images/Image1.jpg');
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    /* margin-top: -10px; */
+    padding-top: 10px;
+}
+
+.form-container {
+    width: 50%;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: rgba(233, 225, 215, 0.308);
+    border: 2px solid black;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+label {
+    margin-top: 10px;
+}
+
+input[type="text"],
+input[type="date"],
+textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+input[type="submit"] {
+    width: 30%;
+    margin: 10px auto;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    /* background-color: #4caf50; */
+    background-image: linear-gradient(-180deg, #37AEE2 0%, #1E96C8 100%);
+
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    /* background-color: #45a049; */
+    background-image: linear-gradient(-180deg, #1D95C9 0%, #17759C 100%);
+
+}

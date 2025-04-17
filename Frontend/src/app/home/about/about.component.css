@@ -1,0 +1,50 @@
+about.about-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: justify;
+}
+
+.about-container h2 {
+    color: #333;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.about-container p {
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.about-container h3 {
+    color: #ff7043;
+    font-size: 1.5em;
+    margin-top: 20px;
+}
+
+.about-container ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 10px 0;
+}
+
+.about-container ul li {
+    margin-bottom: 8px;
+}
+
+/* Styling for buttons or links can be added if needed */
+
+/* Example button styling */
+.about-container a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ff7043;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.about-container a:hover {
+    background-color: #ed4a43;
+}

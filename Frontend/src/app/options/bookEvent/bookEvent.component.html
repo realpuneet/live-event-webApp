@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Event Booking Form</title>
+</head>
+
+<body>
+    <div class="whole">
+        <div class="form-container">
+            <h1>Book Event</h1>
+            <form action="#" method="post" #eventBook="ngForm" (ngSubmit)="addEvent(eventBook.value)">
+                <input type="text" id="eventTitle" name="title" placeholder="Event Title" [(ngModel)]="eventData.title"
+                    required>
+
+                <textarea id="eventDescription" name="description" rows="4" placeholder="Event Description"
+                    [(ngModel)]="eventData.description" required></textarea>
+
+                <input type="date" id="eventDate" placeholder="Event Date:" name="date" [(ngModel)]="eventData.date"
+                    required>
+
+                <input type="text" id="eventLocation" name="location" placeholder="Event Location"
+                    [(ngModel)]="eventData.location" required>
+
+                <input type="submit" value="Book Event">
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

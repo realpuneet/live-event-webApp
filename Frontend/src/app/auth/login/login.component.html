@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+</head>
+
+<body>
+    <div class="whole">
+        <div class="container">
+            <div class="heading">
+                <h4>SIGN IN</h4>
+            </div>
+            <!-- <div class="sub-heading">
+                <P>Enter your email and password</P>
+            </div> -->
+
+            <div class="form">
+                <form #loginform="ngForm" (ngSubmit)="login(userData)">
+
+
+                    <div class="name">
+                        <input type="text" name="email" class="box" placeholder="Enter your email" #email="ngModel"
+                            [(ngModel)]="userData.email" required email>
+                        <span class="validation" *ngIf="email.invalid && email.touched">invalid
+                            email</span>
+                    </div>
+
+                    <div class="name">
+                        <input type="password" name="password" class="box" placeholder="Enter your password"
+                            #password="ngModel" required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                            [(ngModel)]="userData.password">
+                        <span class="validation" *ngIf="password.invalid && password.touched">invalid password</span>
+                    </div>
+                    <div class="forgot">
+                        <u class="clickable" (click)="gotoforgot()">Forgot Password?</u>
+
+                    </div>
+
+                    <input type="submit" name="" class="btn" value="Sign In" ngModel>
+                </form>
+                <div class="last">
+                    <p>I have an account <u class="clickable" (click)="gotosignup()">Sign up</u></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

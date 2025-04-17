@@ -1,0 +1,12 @@
+<app-navbar *ngIf="shouldShowNavbar"></app-navbar>
+<div class="slideimg">
+    <router-outlet></router-outlet>
+
+    <a routerLink="/">home</a>
+    <a routerLink="auth/login">login</a>
+    <a routerLink="options/book-event">Book event</a>
+    <a routerLink="auth/reset">Reset</a>
+    <a routerLink="user/signup">Signup</a>
+    <a routerLink="auth/forgot">Forgot</a>
+    <a routerLink="dashboard">dashboard</a>
+</div>
